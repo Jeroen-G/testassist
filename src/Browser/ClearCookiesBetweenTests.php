@@ -1,6 +1,6 @@
 <?php
 
-namespace TestAssist\Browser;
+namespace JeroenG\TestAssist\Browser;
 
 use Illuminate\Support\Collection;
 
@@ -20,11 +20,4 @@ trait ClearCookiesBetweenTests
             });
         }
     }
-    /* public function test_clear_cookies()
-+    {
-+        $driver = Mockery::mock(StdClass::class);
-+        $driver->shouldReceive('manage->deleteAllCookies');
-+        $browser = new Browser($driver);
-+        $browser->clearCookies();
-+    } */
 }

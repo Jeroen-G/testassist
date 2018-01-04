@@ -1,22 +1,35 @@
 <?php
 
-/**
- *
- */
+namespace JeroenG\TestAssist\Filesystem;
+
 trait FabricateModels
 {
-     /*
-    found in laracasts/lets-build-a-forum-in-laravel
-    */
-    function create($class, $attributes = [], $times = null)
+    /**
+     * Shortcut to 'create' models through factories.
+     *
+     * Found in Laracasts/lets-build-a-forum-in-laravel
+     *
+     * @param string $class
+     * @param array $attributes
+     * @param integer|null $times
+     * @return \Illuminate\Database\Eloquent\Model
+     */
+    public function create(string $class, array $attributes = [], $times = null)
     {
         return factory($class, $times)->create($attributes);
     }
 
-/*
-    found in laracasts/lets-build-a-forum-in-laravel
-    */
-function make($class, $attributes = [], $times = null)
+    /**
+     * Shortcut to 'make' models through factories.
+     *
+     * Found in Laracasts/lets-build-a-forum-in-laravel
+     *
+     * @param string $class
+     * @param array $attributes
+     * @param integer|null $times
+     * @return \Illuminate\Database\Eloquent\Model
+     */
+    public function make(string $class, array $attributes = [], $times = null)
     {
         return factory($class, $times)->make($attributes);
     }

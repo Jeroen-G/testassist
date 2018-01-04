@@ -1,13 +1,14 @@
 {
     "name": "jeroen-g/testassist",
     "description": "Helpers for testing with PHPUnit",
-    "homepage": "https://github.com/jeroeng/testassist",
+    "homepage": "https://github.com/Jeroen-G/testAssist",
     "keywords": ["Laravel", "TestAssist", "Testing", "Helpers"],
     "license": "EUPL-1.1",
     "authors": [
         {
             "name": "JeroenG",
-            "email": "jeroengjeroeng@gmail.com"
+            "email": "jeroengjeroeng@gmail.com",
+            "homepage": "https://github.com/Jeroen-G"
         }
     ],
     "require-dev": {
@@ -21,13 +22,6 @@
     "autoload-dev": {
         "psr-4": {
             "JeroenG\\TestAssist\\Tests\\": "tests"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "JeroenG\\TestAssist\\TestAssistServiceProvider"
-            ]
         }
     }
 }

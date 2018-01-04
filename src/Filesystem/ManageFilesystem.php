@@ -1,11 +1,16 @@
 <?php
 
-/**
- *
- */
+namespace JeroenG\TestAssist\Filesystem;
+
 trait ManageFilesystem
 {
-    public function removeDir($path)
+    /**
+     * Remove given directory and everything in it.
+     *
+     * @param string $path
+     * @return void
+     */
+    public function removeDir(string $path)
     {
         $files = array_diff(scandir($path), ['.', '..']);
         foreach ($files as $file) {

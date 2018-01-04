@@ -1,23 +1,34 @@
 <?php
 
+namespace JeroenG\TestAssist\Console;
+
 trait OutputAssertions
 {
     /**
-     * found in spatie/laravel-backup
-     * @param string|array $searchStrings
+     * Assert the expected text is in the console output.
+     *
+     * Found in spatie/laravel-backup
+     *
+     * @param string|array $expectedText
+     * @return void
      */
     protected function seeInConsoleOutput($expectedText)
     {
         $consoleOutput = $this->app[Kernel::class]->output();
         $this->assertContains($expectedText, $consoleOutput, "Did not see `{$expectedText}` in console output: `$consoleOutput`");
     }
+
     /**
-     * found in spatie/laravel-backup
-     * @param string|array $searchStrings
+     * Assert the expected text is NOT in the console output.
+     *
+     * Found in spatie/laravel-backup
+     *
+     * @param string|array $unexpectedText
+     * @return void
      */
-    protected function doNotSeeInConsoleOutput($unExpectedText)
+    protected function doNotSeeInConsoleOutput($unexpectedText)
     {
         $consoleOutput = $this->app[Kernel::class]->output();
-        $this->assertNotContains($unExpectedText, $consoleOutput, "Did not expect to see `{$unExpectedText}` in console output: `$consoleOutput`");
+        $this->assertNotContains($unexpectedText, $consoleOutput, "Did not expect to see `{$unexpectedText}` in console output: `$consoleOutput`");
     }
 }
