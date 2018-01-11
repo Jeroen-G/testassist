@@ -2,7 +2,8 @@
 
 namespace JeroenG\TestAssist;
 
-trait Assistants {
+trait Assistants
+{
     use Browser\ClearCookiesBetweenTests,
         Console\OutputAssertions,
         Filesystem\FabricateModels,

@@ -11,7 +11,7 @@ trait FabricateModels
      *
      * @param string $class
      * @param array $attributes
-     * @param integer|null $times
+     * @param int|null $times
      * @return \Illuminate\Database\Eloquent\Model
      */
     public function create(string $class, array $attributes = [], $times = null)
@@ -26,7 +26,7 @@ trait FabricateModels
      *
      * @param string $class
      * @param array $attributes
-     * @param integer|null $times
+     * @param int|null $times
      * @return \Illuminate\Database\Eloquent\Model
      */
     public function make(string $class, array $attributes = [], $times = null)
