@@ -11,9 +11,6 @@
             "homepage": "https://github.com/Jeroen-G"
         }
     ],
-    "require-dev": {
-        "phpunit/phpunit": "~6.0"
-    },
     "autoload": {
         "psr-4": {
             "JeroenG\\TestAssist\\": "src/"

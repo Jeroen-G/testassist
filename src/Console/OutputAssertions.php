@@ -2,6 +2,8 @@
 
 namespace JeroenG\TestAssist\Console;
 
+use Illuminate\Foundation\Console\Kernel;
+
 trait OutputAssertions
 {
     /**

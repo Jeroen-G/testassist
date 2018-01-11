@@ -2,6 +2,9 @@
 
 namespace JeroenG\TestAssist\Filesystem;
 
+use Storage;
+use Illuminate\Contracts\Filesystem\FileNotFoundException;
+
 trait FileAssertions
 {
     /**
