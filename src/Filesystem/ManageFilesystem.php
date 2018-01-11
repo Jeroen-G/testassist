@@ -21,6 +21,7 @@ trait ManageFilesystem
                 @unlink("$path/$file");
             }
         }
+
         return rmdir($path);
     }
 }

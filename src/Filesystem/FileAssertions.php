@@ -76,6 +76,7 @@ trait FileAssertions
     {
         try {
             Storage::disk($diskName)->getMetaData($fileName);
+
             return true;
         } catch (FileNotFoundException $exception) {
             return false;
@@ -110,7 +111,7 @@ trait FileAssertions
         if ($zip->open($zipPath) === true) {
             return $zip->locateName($filename, \ZipArchive::FL_NODIR) !== false;
         }
+
         return false;
     }
-
 }
