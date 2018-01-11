@@ -101,11 +101,11 @@ EUPL-1.1. Please see the [license file](license.md) for more information.
 [ico-version]: https://img.shields.io/packagist/v/jeroen-g/testassist.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/jeroen-g/testassist.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/jeroen-g/testassist/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/12345678/shield
+[ico-styleci]: https://styleci.io/repos/115641981/shield
 
 [link-packagist]: https://packagist.org/packages/jeroen-g/testassist
 [link-downloads]: https://packagist.org/packages/jeroen-g/testassist
 [link-travis]: https://travis-ci.org/jeroen-g/testassist
-[link-styleci]: https://styleci.io/repos/12345678
+[link-styleci]: https://styleci.io/repos/115641981
 [link-author]: https://github.com/jeroen-g
 [link-contributors]: ../../contributors]
