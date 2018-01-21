@@ -52,16 +52,27 @@ protected function tearDown()
 
 Contains two functions: `seeInConsoleOutput($text)` and 'doNotSeeInConsoleOutput($text)` to check whether or not the (un)expected text appears in the console output.
 
-### Filesystem
+### Database
 #### FabricateModels
-`use JeroenG\TestAssist\Filesystem\FabricateModels`
+`use JeroenG\TestAssist\Database\FabricateModels`
 
 Containts two functions as shortcuts to Laravel's factory method to create/make model instances.
 The shortest use would be as follows:
 ```php
 $member = $this->create(User::class);
+$member = $this->make(User::class);
 ```
 
+#### DataAssertions
+`use JeroenG\TestAssist\Database\DataAssertions`
+
+Containts two methods to assert if an Eloquent model is inserted into the database (technically an alias for `assertDatabaseHas()`) or to assert that its row is updated.
+```php
+$this->assertCreated('users', $member);
+$this->assertUpdated('users', $member);
+```
+
+### Filesystem
 #### ManageFilesystem
 `use JeroenG\TestAssist\Filesystem\ManageFilesystem`
 

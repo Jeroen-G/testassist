@@ -1,6 +1,6 @@
 <?php
 
-namespace JeroenG\TestAssist\Filesystem;
+namespace JeroenG\TestAssist\Database;
 
 trait FabricateModels
 {
