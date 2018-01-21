@@ -66,10 +66,11 @@ $member = $this->make(User::class);
 #### DataAssertions
 `use JeroenG\TestAssist\Database\DataAssertions`
 
-Containts two methods to assert if an Eloquent model is inserted into the database (technically an alias for `assertDatabaseHas()`) or to assert that its row is updated.
+Containts two methods to assert if an Eloquent model is inserted into the database (technically an alias for `assertDatabaseHas()`) or to assert that its row is updated or deleted.
 ```php
 $this->assertCreated('users', $member);
 $this->assertUpdated('users', $member);
+$this->assertDeleted('users', $member);
 ```
 
 ### Filesystem

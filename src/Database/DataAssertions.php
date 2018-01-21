@@ -30,4 +30,16 @@ trait DataAssertions
         $this->assertNotEquals($model->created_at, $model->updated_at);
         $this->assertDatabaseHas($table, ['updated_at' => $model->updated_at]);
     }
+
+    /**
+     * Alias for asserting that a model's row is no longer in the table.
+     *
+     * @param string $table
+     * @param \Illuminate\Database\Eloquent\Model $model
+     * @return void
+     */
+    public function assertDeleted(string $table, Model $model)
+    {
+        $this->assertDatabaseMissing($table, ['id' => $model->id]);
+    }
 }
