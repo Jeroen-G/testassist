@@ -82,6 +82,26 @@ More information [here](https://stackoverflow.com/questions/5071601/how-do-i-use
 $this->AddRegexToSQLite();
 ```
 
+#### SeedDatabase
+`use JeroenG\TestAssist\Database\SeedDatabase`
+
+Runs your `DatabaseSeeder` class if you use the trait. In your testcase's `setUp` method you should run this:
+```php
+// At the top of your class:
+use JeroenG\TestAssist\Assistants;
+
+// in setUp():
+$this->runSeeder();
+```
+ If you do not use the whole set of assistants (see top of usage section), place the following code in your `setUp()` method:
+```php
+// If Concerns\SeedDatabase is used, go seed the database, but only once per class.
+if (isset(static::$seedDatabase) && static::$seedDatabase != false) {
+    $this->seedDatabase();
+    static::$seedDatabase = false;
+}
+```
+
 ### Filesystem
 #### ManageFilesystem
 `use JeroenG\TestAssist\Filesystem\ManageFilesystem`
