@@ -5,6 +5,7 @@ All notable changes to `TestAssist` will be documented in this file.
 ## Version 1.x
 
 ### Added
+- Seed your database if required, fix a SQLite if necessary.
 - Assertions for whether a model is inserted, updated or deleted in the database.
 - Moved `FabricateModels` to the same `Database` namespace.
 
