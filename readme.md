@@ -73,6 +73,15 @@ $this->assertUpdated('users', $member);
 $this->assertDeleted('users', $member);
 ```
 
+#### SQLiteRegex
+`use JeroenG\TestAssist\Database\SQLiteRegex`
+
+Add the function below to your `SetUpBeforeClass` to give SQLite the ability to use `REGEXP` statements.
+More information [here](https://stackoverflow.com/questions/5071601/how-do-i-use-regex-in-a-sqlite-query) and credits should go [here](https://gist.github.com/wingsline/4441139).
+```php
+$this->AddRegexToSQLite();
+```
+
 ### Filesystem
 #### ManageFilesystem
 `use JeroenG\TestAssist\Filesystem\ManageFilesystem`
