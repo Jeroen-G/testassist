@@ -17,6 +17,5 @@ trait SeedDatabase
     public function seedDatabase()
     {
         $this->seed('DatabaseSeeder');
-        echo 'seeder run for '.get_class();
     }
 }
