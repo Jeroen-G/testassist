@@ -5,7 +5,7 @@ namespace JeroenG\TestAssist\Database;
 trait SeedDatabase
 {
     /**
-     * Determine whether the seeder should run. Set to false after it ran.
+     * Determine whether the seeder should run. Set to false after it ran to run it only once.
      *
      * @var bool
      */

@@ -93,7 +93,7 @@ use JeroenG\TestAssist\Assistants;
 // in setUp():
 $this->runSeeder();
 ```
- If you do not use the whole set of assistants (see top of usage section), place the following code in your `setUp()` method:
+ If you do not use the whole set of assistants (see top of usage section), place the following code in your `setUp()` method to run it only once:
 ```php
 // If Concerns\SeedDatabase is used, go seed the database, but only once per class.
 if (isset(static::$seedDatabase) && static::$seedDatabase != false) {
