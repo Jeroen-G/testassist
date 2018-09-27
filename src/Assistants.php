@@ -22,4 +22,26 @@ trait Assistants
             static::$seedDatabase = false;
         }
     }
+
+    /**
+     * Assert that a given class is called by the Laravel application when executing the callback.
+     *
+     * @param string   $className
+     * @param callable $callback
+     *
+     * @return bool|string
+     */
+    public function assertIsCalled($className, $callback)
+    {
+        $called = false;
+        $this->app->resolving(function ($object, $app) use (&$called, $className) {
+            if ($object instanceof $className) {
+                $called = true;
+            }
+        });
+
+        call_user_func($callback);
+
+        $this->assertTrue($called, $className.' was not called.');
+    }
 }
