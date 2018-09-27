@@ -29,6 +29,23 @@ class MyTest {
 }
 ```
 
+### General functions
+#### AssertIsCalled
+`use JeroenG\TestAssist\Assistants`
+
+This function accepts two parameters, the first is the classname that needs to get called, the second is a callback during which the class should be called. And example would be an event listener:
+
+```php
+
+public function test_this()
+{
+    $this->assertIsCalled(UserHasSignedUp::class, function() {
+        User::create([....]);
+    });
+}
+```
+
+
 ### Browser (Laravel Dusk)
 #### ClearCookiesBetweenTests
 `use JeroenG\TestAssist\Browser\ClearCookiesBetweenTests`
