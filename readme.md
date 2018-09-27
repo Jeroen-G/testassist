@@ -2,7 +2,6 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
-[![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
 
 This package contains some nifty helpers and assertions that are made with Laravel in mind. The majority of functions are found in other packages, tutorials or repositories and credit is given for each function.
@@ -141,12 +140,10 @@ EUPL-1.1. Please see the [license file](license.md) for more information.
 
 [ico-version]: https://img.shields.io/packagist/v/jeroen-g/testassist.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/jeroen-g/testassist.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/jeroen-g/testassist/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/115641981/shield
 
 [link-packagist]: https://packagist.org/packages/jeroen-g/testassist
 [link-downloads]: https://packagist.org/packages/jeroen-g/testassist
-[link-travis]: https://travis-ci.org/jeroen-g/testassist
 [link-styleci]: https://styleci.io/repos/115641981
 [link-author]: https://github.com/jeroen-g
 [link-contributors]: ../../contributors]
