@@ -68,6 +68,11 @@ protected function tearDown()
 
 Contains two functions: `seeInConsoleOutput($text)` and 'doNotSeeInConsoleOutput($text)` to check whether or not the (un)expected text appears in the console output.
 
+#### ExceptionHandling
+`use JeroenG\TestAssist\Console\ExceptionHandling`
+
+Use `disableExceptionHandling()` to get the entire stacktrace instead of a `error 500`-like message. Use `withExceptionHandling()` to reactivate Laravel's error rendering.
+
 ### Database
 #### FabricateModels
 `use JeroenG\TestAssist\Database\FabricateModels`
