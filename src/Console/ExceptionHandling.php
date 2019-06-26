@@ -2,8 +2,8 @@
 
 namespace JeroenG\TestAssist\Console;
 
-use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Foundation\Exceptions\Handler;
+use Illuminate\Contracts\Debug\ExceptionHandler;
 
 trait ExceptionHandling
 {
