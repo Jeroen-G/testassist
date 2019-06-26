@@ -6,6 +6,7 @@ trait Assistants
 {
     use Browser\ClearCookiesBetweenTests,
         Console\OutputAssertions,
+        Console\ExceptionHandling,
         Database\FabricateModels,
         Database\DataAssertions,
         Filesystem\FileAssertions,
